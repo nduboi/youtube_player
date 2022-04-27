@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube player</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="build/js/main.js"></script>
+</head>
+<body class="bg-gray-200">
+    <main class="flex justify-center">
+        <section class="container p-8 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <div class="m-5 shadow-md rounded-lg overflow-hidden hover:shadow-2xl bg-white p-5">
+                <input type="url" name="youtube_adress" id="youtube_adress" placeholder="Lien d'une vidéo youtube"/>
+            </div>
+            <button id="test" onclick="play()" class="m-5 shadow-md rounded-lg overflow-hidden hover:shadow-2xl bg-white p-5">Play</button>
+            <button id="test" onclick="test()" class="m-5 shadow-md rounded-lg overflow-hidden hover:shadow-2xl bg-white p-5">test</button>
+            <div id="YT.Player"></div>
+        </section>
+    </main>
+</body>
+</html>
